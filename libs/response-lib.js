@@ -1,9 +1,9 @@
 export function success(body) {
-    buildResponse(200, body);
+    return buildResponse(200, body);
 }
 
 export function failure(body) {
-    buildResponse(500, body);
+    return buildResponse(500, body);
 }
 
 function buildResponse(statusCode, body) {
